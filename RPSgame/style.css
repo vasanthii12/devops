@@ -1,0 +1,54 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("bgame.jpg");
+    background-size: contain;
+  }
+  
+  #game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding-top: 60px;
+  }
+  
+  .choice {
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .choice:hover {
+    transform: scale(1.1);
+  }
+  
+  #score {
+    margin-top: 80px;
+    font-size: 24px;
+    color: #020202;
+    background-color: #ffee00;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    transform: rotate(-2deg) scale(1);
+    transition: transform 0.3s, color 0.3s, background-color 0.3s;
+  }
+  
+  #username {
+    margin-top: 50px;
+  }
+  
+  #score.win {
+    transform: rotate(2deg) scale(1.1);
+    color: #44bd32;
+    background-color: #2ecc71;
+  }
+  
+  #score.lose {
+    transform: rotate(-4deg) scale(1.1);
+    color: #e84118;
+    background-color: #e74c3c;
+  }
+  
